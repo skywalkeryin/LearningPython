@@ -1,0 +1,30 @@
+import math
+
+a = math.sqrt(4)
+print(a)
+def popwer(x):
+    return x * x
+
+def power(x,n = 2):
+    s = 1
+    while n>0:
+        n = n - 1
+        s = s * x
+    return  s
+b = power(5, 3)
+b = power(5)
+print(b)
+def add_end(L=None): # 传入默认参数
+    if L is None:
+        L = []
+    L.append('END')
+    return L
+print(add_end())
+
+def calc(numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return  sum
+print(calc([1, 2, 3, 4]))
+print(calc(range(1,5)))
