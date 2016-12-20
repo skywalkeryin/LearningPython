@@ -2,8 +2,11 @@ import math
 
 a = math.sqrt(4)
 print(a)
+
+
 def popwer(x):
     return x * x
+
 
 def power(x,n = 2):
     s = 1
@@ -14,12 +17,15 @@ def power(x,n = 2):
 b = power(5, 3)
 b = power(5)
 print(b)
+
+
 def add_end(L=None): # 传入默认参数
     if L is None:
         L = []
     L.append('END')
     return L
 print(add_end())
+
 
 def calc(numbers):
     sum = 0
